@@ -45,7 +45,7 @@ public class runner {
                     sumRow+= grid[r][c] + grid[r][c+1];
                     c++;
                 }
-                if (c != 0 && grid[r][c]== grid[r][c-1])
+                if (c != 0 && grid[r][c] == grid[r][c-1])
                 {
                     sumRow+= grid[r][c];
                 }
@@ -58,12 +58,12 @@ public class runner {
             for(int r=0;r<grid.length-1;r++){
                 if (grid[r][c] == grid[r+1][c])
                 {
-                    sumRow+= grid[r][c] + grid[r+1][c];
+                    sumColumn+= grid[r][c] + grid[r+1][c];
                     r++;
                 }
-                if (r != 0 && grid[r][c]== grid[r-1][c])
+                if (r != 0 && grid[r][c] == grid[r-1][c])
                 {
-                    sumRow+= grid[r][c];
+                    sumColumn+= grid[r][c];
                 }
 
 
